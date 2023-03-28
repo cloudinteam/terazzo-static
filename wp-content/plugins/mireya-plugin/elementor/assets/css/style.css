@@ -1,0 +1,6 @@
+.elementor-editor-active .mry-app {
+	padding-top: 100px;
+}
+.elementor-editor-active .mry-curtain, .elementor-editor-active .mry-loading-curtain {
+	opacity: 0;
+}
