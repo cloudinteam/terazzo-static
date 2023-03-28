@@ -3,7 +3,7 @@
 The import files for: Default were successfully downloaded!
 Initial max execution time = 600
 Files info:
-Site URL = http://localhost/terazzo
+Site URL = https://cloudinteam.github.io/terazzo-static/
 Data file = C:\xampp\htdocs\terazzo/wp-content/uploads/2023/03/demo-content-import-file_2023-03-15__04-33-46.xml
 Widget file = not defined!
 Customizer file = not defined!
