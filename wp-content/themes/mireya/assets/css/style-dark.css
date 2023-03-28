@@ -1,0 +1,579 @@
+/*
+Template Name: Mireya
+Template URL: https://ultimatewebsolutions.net/mireya/intro/
+Author: Ultimate Websolutions
+Author URL: https://themeforest.net/user/ultimatewebsolutions/
+*/
+
+/* Dark */
+
+body {
+	background-color: #141414;
+}
+
+.mry-text {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-text a {
+	color: red;
+}
+
+.mry-text a:hover {
+	color: red;
+}
+
+.mry-text .mry-color-text {
+	color: red;
+}
+
+a, a:hover {
+	color: inherit;
+}
+
+/* Text */
+
+.mry-h1, .mry-h2, .mry-h3, .mry-h4, .mry-h5, .mry-h6, h1, h2, h3, h4, h5, h6 {
+	color: #e6e6e6;
+}
+
+.mry-border-text {
+	-webkit-text-stroke-color: #e6e6e6;
+	-moz-text-stroke-color: #e6e6e6;
+	color: transparent !important;
+}
+
+.mry-label {
+	color: #e6e6e6;
+}
+
+/* After 768px */
+
+@media (max-width: 768px) {
+	.mry-h1 .mry-border-text, h1 .mry-border-text {
+		-webkit-text-stroke-color: inherit;
+		-moz-text-stroke-color: inherit;
+		color: inherit !important;
+	}
+	.mry-h2 .mry-border-text, h2 .mry-border-text {
+		-webkit-text-stroke-color: inherit;
+		-moz-text-stroke-color: inherit;
+		color: inherit !important;
+	}
+	.mry-h3 .mry-border-text, h3 .mry-border-text {
+		-webkit-text-stroke-color: inherit;
+		-moz-text-stroke-color: inherit;
+		color: inherit !important;
+	}
+	.mry-h4 .mry-border-text, h4 .mry-border-text {
+		-webkit-text-stroke-color: inherit;
+		-moz-text-stroke-color: inherit;
+		color: inherit !important;
+	}
+}
+
+/* Cursor and Trigers */
+
+.mry-ball {
+	border: 1px solid #e1e1e1;
+}
+
+/* Buttons */
+
+.mry-btn, .mry-btn-text {
+	color: #e1e1e1;
+	border: solid 2px #e1e1e1;
+}
+
+.mry-btn:hover, .mry-btn-text:hover {
+	color: red;
+}
+
+.mry-btn-text {
+	border-color: transparent;
+}
+
+.mry-link {
+	color: #e1e1e1;
+}
+
+.mry-link:hover {
+	color: red;
+}
+
+/* Frame
+==================================== */
+
+/* App Markup */
+
+.mry-app .mry-preloader {
+	background-color: #0a0a0a;
+}
+
+.mry-app .mry-preloader .mry-preloader-content .mry-loader-bar {
+	background-color: #141414;
+}
+
+.mry-app .mry-preloader .mry-preloader-content .mry-loader-bar .mry-loader {
+	background-color: red;
+}
+
+.mry-app .mry-top-panel .mry-logo-frame {
+	background-color: #141414;
+}
+
+@media (max-width: 782px) {
+.mry-app .mry-top-panel {
+    background: #141414;
+}
+}
+
+/* Menu Button */
+
+.mry-menu-button-frame {
+	background-color: #141414;
+}
+
+.mry-menu-button-frame .mry-label {
+	color: #e1e1e1;
+}
+
+.mry-menu-button-frame .mry-menu-btn .mry-burger span, .mry-menu-button-frame .mry-menu-btn .mry-burger span:after, .mry-menu-button-frame .mry-menu-btn .mry-burger span:before {
+	background: #e1e1e1;
+}
+
+/* Menu */
+
+.mry-menu {
+	background-color: #0a0a0a;
+}
+
+.mry-menu nav ul .menu-item a {
+	color: #e6e6e6;
+}
+
+.mry-menu nav ul .menu-item.current-menu-item a {
+	color: red;
+}
+
+.mry-menu nav ul .menu-item .sub-menu a {
+	color: #e6e6e6;
+}
+
+.mry-menu nav ul .menu-item .sub-menu a:hover {
+	color: rgba(215, 215, 215, 0.8) !important;
+}
+
+.mry-menu nav ul .menu-item .sub-menu .menu-item a {
+	color: rgba(195, 195, 195, 0.5);
+}
+
+.mry-menu nav ul .menu-item.menu-item-has-children:after {
+	color: rgba(195, 195, 195, 0.5);
+}
+
+.mry-menu .mry-info-box-frame {
+	background-color: #141414;
+}
+
+.mry-menu .mry-info-box-frame .mry-info-box .mry-label {
+	color: rgba(195, 195, 195, 0.5);
+}
+
+html.is-animating body .mry-ball, html.is-rendering body .mry-ball {
+	background-color: transparent !important;
+}
+
+html.is-animating body .mry-ball svg path, html.is-rendering body .mry-ball svg path {
+	fill: red;
+}
+
+.mry-curtain, .mry-loading-curtain {
+	background-color: #141414;
+}
+
+/* Content
+==================================== */
+
+/* Backgrounds */
+
+.mry-head-bg .mry-bg-overlay {
+	background-image: linear-gradient(0deg, #141414 1%, rgba(20, 20, 20, 0.85) 100%, rgba(20, 20, 20, 0.8) 100%);
+}
+
+/* Titles */
+
+.mry-subtitle {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-subtitle:before {
+	background-color: red;
+}
+
+/* Slider project */
+
+.mry-project-slider-item .mry-project-frame .mry-cover-overlay {
+	background-color: rgba(20, 20, 20, 0.45);
+}
+
+.mry-project-slider-item .mry-project-frame .mry-cover-overlay.mry-gradient-overlay {
+	background-image: linear-gradient(269deg, rgba(20, 20, 20, 0) 70%, rgba(20, 20, 20, 0.4) 80%, #141414 100%);
+}
+
+.mry-project-slider-item .mry-main-title-frame .mry-main-title h1 {
+	text-shadow: 0 0 40px rgba(13, 13, 13, 0.5);
+}
+
+/* Slider Project after 768px */
+
+@media (max-width: 768px) {
+	.mry-project-slider-item .mry-project-frame .mry-cover-overlay.mry-gradient-overlay {
+		background-color: rgba(20, 20, 20, 0.45);
+		background-image: none;
+	}
+	.mry-project-slider-item .mry-project-frame .mry-main-title-frame .mry-main-title {
+		background-color: #141414;
+	}
+}
+
+/* Slider Navigation */
+
+.mry-slider-pagination-frame {
+	background-color: #141414;
+}
+
+.mry-slider-pagination-frame .mry-slider-pagination .swiper-pagination-bullet {
+	background-color: #e1e1e1;
+}
+
+.mry-slider-pagination-frame .mry-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: red;
+}
+
+.mry-slider-progress-bar-frame .mry-slider-progress-bar .mry-progress {
+	background: rgba(225, 225, 225, 0.1);
+}
+
+.mry-slider-arrows {
+	background-color: #141414;
+}
+
+.mry-slider-arrows .mry-label {
+	color: #e1e1e1;
+}
+
+.mry-slider-arrows .mry-button-next span i, .mry-slider-arrows .mry-button-prev span i {
+	color: #e1e1e1;
+}
+
+/* Slider Navigation after 590px */
+
+@media (max-width: 590px) {
+	.mry-slider-arrows {
+		background-color: transparent !important;
+	}
+}
+
+/* Scroll Hint */
+
+.mry-scroll-hint-frame .mry-label {
+	color: #e1e1e1;
+}
+
+.mry-scroll-hint-frame .mry-scroll-hint span {
+	border: solid 2px #e1e1e1;
+}
+
+.mry-scroll-hint-frame .mry-scroll-hint span:after {
+	background-color: #e1e1e1;
+}
+
+/* Slider Arrows */
+
+.mry-arrows .mry-sl-nav .mry-next, .mry-arrows .mry-sl-nav .mry-prev {
+	color: #e6e6e6;
+}
+
+.mry-arrows .mry-label {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+/* Video */
+
+.mry-about-video .mry-video-cover-frame .mry-cover-overlay {
+	background-color: rgba(20, 20, 20, 0.45);
+}
+
+.mry-about-video .mry-video-cover-frame .mry-play-button {
+	border: solid 2px #e1e1e1;
+	box-shadow: inset 0 0 40px rgba(13, 13, 13, 0.5), 0 0 40px rgba(13, 13, 13, 0.5);
+}
+
+.mry-about-video .mry-video-cover-frame .mry-play-button a i {
+	color: #e1e1e1;
+	text-shadow: 0 0 40px rgba(13, 13, 13, 0.5);
+}
+
+/* Team */
+
+.mry-team-member .mry-member-photo-frame .mry-photo-overlay {
+	background-color: rgba(20, 20, 20, 0.45);
+}
+
+/* Testimonials */
+
+.mry-star-rate li i {
+	color: red;
+}
+
+.mry-star-rate li.mry-empty i {
+	color: #e6e6e6;
+}
+
+/* Blog Pagination */
+
+.mry-pagination li.mry-active {
+	background-color: red;
+}
+
+.mry-pagination li.mry-active a {
+	color: #141414;
+}
+
+.mry-pagination li a {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-pagination li a:hover {
+	color: #e6e6e6;
+}
+
+/* Contact */
+
+.mry-form input, .mry-form textarea {
+	border: solid 2px #e6e6e6;
+	color: #e6e6e6;
+	background-color: transparent;
+}
+
+.mry-form input:focus, .mry-form textarea:focus {
+	border-color: red;
+}
+
+.mry-success-popup-frame {
+	background-color: #141414;
+}
+
+.mry-success-popup-frame .mry-success-popup {
+	background-color: #0a0a0a;
+}
+
+/* Quote */
+
+blockquote {
+	color: #e6e6e6;
+	background: #0a0a0a;
+}
+
+blockquote:before {
+	color: #e6e6e6;
+}
+
+blockquote:after {
+	color: #e6e6e6;
+}
+
+/* Footer */
+
+.mry-footer .mry-footer-copy {
+	background-color: #0a0a0a;
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-footer .mry-footer-copy .container .mry-social li a {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-footer .mry-footer-copy .container .mry-social li a:hover {
+	color: #e6e6e6;
+}
+
+/* Portfolio
+==================================== */
+
+/* Filter */
+
+.mry-filter .mry-card-category {
+	color: #e1e1e1;
+}
+
+.mry-filter .mry-card-category.mry-current {
+	color: red;
+}
+
+/* Work Item */
+
+.mry-card-item .mry-card-cover-frame .mry-badge {
+	color: rgba(215, 215, 215, 0.8);
+	background-color: #141414;
+}
+
+.mry-card-item .mry-card-cover-frame .mry-cover-overlay {
+	background-color: rgba(20, 20, 20, 0.45);
+}
+
+.mry-card-item .mry-card-cover-frame .mry-hover-links {
+	background-color: #0a0a0a;
+}
+
+.mry-card-item .mry-card-cover-frame .mry-hover-links .mry-more i, .mry-card-item .mry-card-cover-frame .mry-hover-links .mry-zoom i {
+	color: #e1e1e1;
+}
+
+/* Grid after 768px */
+
+@media (max-width: 768px) {
+	.mry-filter .mry-card-category.mry-current {
+		color: red;
+	}
+}
+
+/* Custom
+==================================== */
+
+/* Mapbox */
+
+.mapboxgl-marker:after {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mapboxgl-marker svg g {
+	fill: red;
+}
+
+.mapboxgl-marker svg circle {
+	fill: #141414;
+}
+
+.mapboxgl-marker svg ellipse {
+	fill: #000;
+}
+
+.mry-lock {
+	color: rgba(215, 215, 215, 0.8);
+}
+
+.mry-lock:hover {
+	color: #e6e6e6;
+}
+
+/* Fancybox */
+
+.fancybox-container .fancybox-bg {
+	background: #0a0a0a;
+}
+
+.fancybox-slide--video .fancybox-content {
+	background-color: transparent;
+}
+
+.fancybox-navigation .fancybox-button--arrow_left, .fancybox-navigation .fancybox-button--arrow_right {
+	color: #e1e1e1;
+}
+
+.fancybox-toolbar {
+	background: #141414;
+}
+
+.fancybox-toolbar .fancybox-button {
+	color: #e6e6e6;
+}
+
+.fancybox-toolbar .fancybox-button:hover {
+	color: #e6e6e6;
+}
+
+.fancybox-navigation .fancybox-button {
+	background-color: transparent;
+}
+
+.fancybox-progress {
+	background: red;
+}
+
+.fancybox-thumbs {
+	background-color: #0a0a0a;
+}
+
+.fancybox-thumbs__list a:before {
+	border-color: red;
+}
+
+/* Smooth Scrollbar */
+
+.scrollbar-track {
+	background-color: #0a0a0a !important;
+}
+
+.scrollbar-track .scrollbar-thumb {
+	background-color: red !important;
+}
+
+.mry-link, .mry-el-more .mry-link {
+	color: #e1e1e1;
+}
+
+.post .single-post-text, .content-box, .post-comments {
+	color: #d7d7d7;
+}
+
+blockquote p,
+blockquote cite,
+.post-text-bottom span.cat-links a,
+.title.comment-reply-title, 
+.post-comments .title,
+.post-comments .post-comment .desc .name,
+.comment-info {
+	color: #d7d7d7;
+}
+
+.comments>.post-comment {
+	background: #0a0a0a;
+	box-shadow: none;
+}
+
+.comment .comment-respond input, .comment .comment-respond textarea {
+	background: transparent;
+	border-color: #e6e6e6;
+}
+
+.content-sidebar .searchform input[type=text], .content-sidebar .searchform input[type=email], .content-sidebar .searchform input[type=password], .content-sidebar .searchform input[type=datetime], .content-sidebar .searchform input[type=date], .content-sidebar .searchform input[type=month], .content-sidebar .searchform input[type=time], .content-sidebar .searchform input[type=week], .content-sidebar .searchform input[type=search], .content-sidebar .searchform textarea, .content-sidebar .searchform textarea.form-control, .wp-block-search input[type=text], .wp-block-search input[type=email], .wp-block-search input[type=password], .wp-block-search input[type=datetime], .wp-block-search input[type=date], .wp-block-search input[type=month], .wp-block-search input[type=time], .wp-block-search input[type=week], .wp-block-search input[type=search], input[type=text], input[type=email], input[type=password], input[type=datetime], input[type=date], input[type=month], input[type=time], input[type=week], input[type=search], textarea, .wp-block-search textarea, .wp-block-search textarea.form-control {
+	border: solid 2px #e6e6e6;
+	color: #e6e6e6;
+}
+
+body, 
+.mry-text, 
+.mry-menu nav ul .menu-item .sub-menu .menu-item a, 
+.mry-menu nav ul .menu-item.menu-item-has-children > i:after,
+.mry-menu .mry-info-box-frame .mry-info-box .mry-label,
+.mry-subtitle,
+.mry-arrows .mry-label,
+.mry-pagination a, 
+.mry-pagination span, 
+.qrt-blog-pagination a, 
+.qrt-blog-pagination span, 
+.page-links a, 
+.page-links span,
+.mry-footer .mry-footer-copy,
+.mry-footer .mry-footer-copy .container .mry-social li a,
+.mry-card-item .mry-card-cover-frame .mry-badge,
+.mry-lock {
+	color: #424242;
+}
+
+.mry-h1, .mry-h2, .mry-h3, .mry-h4, .mry-h5, .mry-h6, h1, h2, h3, h4, h5, h6 {
+	color: #e6e6e6;
+}

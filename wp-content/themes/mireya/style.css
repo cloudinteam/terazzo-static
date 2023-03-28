@@ -2431,7 +2431,7 @@ select,
 	margin-bottom: 0;
 	-webkit-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;
-	background-image: url(https://cloudinteam.github.io/terazzo-static/wp-content/themes/mireya/assets/images/arrow.svg);
+	background-image: url(assets/images/arrow.svg);
 	background-position: calc(100% - 15px) 50%;
 	background-repeat: no-repeat;
 	background-size: 12px 12px;
@@ -3388,7 +3388,7 @@ textarea {
 	width: 14px;
 	height: 31px;
 	border: none;
-	background: url(https://cloudinteam.github.io/terazzo-static/wp-content/themes/mireya/assets/images/search.svg) no-repeat center center !important;
+	background: url(assets/images/search.svg) no-repeat center center !important;
 	background-size: contain !important;
 	font-size: 0;
 	opacity: 1;
