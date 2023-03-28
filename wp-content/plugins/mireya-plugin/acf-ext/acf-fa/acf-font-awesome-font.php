@@ -1,5 +1,17 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function add_action() in C:\xampp\htdocs\terazzo\wp-content\plugins\mireya-plugin\acf-ext\acf-fa\acf-font-awesome-font.php:10
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\mireya-plugin\acf-ext\acf-fa\acf-font-awesome-font.php</b> on line <b>10</b><br>
+<?php
+
+/*
+ * Advanced Custom Fields: Font Awesome
+*/
+
+function include_field_types_font_awesome_font( $version ) {
+	include_once( 'acf-font-awesome-font-v5.php' );
+}
+add_action( 'acf/include_field_types', 'include_field_types_font_awesome_font' );
+
+function mireya_fontawesome_dashboard() {
+   wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', '5.15.4' );
+}
+add_action( 'admin_init', 'mireya_fontawesome_dashboard' );
+
+?>

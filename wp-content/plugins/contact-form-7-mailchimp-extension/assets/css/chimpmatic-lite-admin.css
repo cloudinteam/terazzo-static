@@ -114,7 +114,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  /* background: #fff url(https://cloudinteam.github.io/terazzo-static/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/newsletter-stripe.svg) repeat-x; */
+  /* background: #fff url(../images/newsletter-stripe.svg) repeat-x; */
   background-size: 70px 9px;
   width: 100%;
   height: 9px;
@@ -233,7 +233,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    background: #fff url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/newsletter-stripe.svg') repeat-x;
+    background: #fff url('../images/newsletter-stripe.svg') repeat-x;
     background-size: 70px 9px;
     width: 100%;
     height: 9px;

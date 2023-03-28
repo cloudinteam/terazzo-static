@@ -1,14 +1,30 @@
-<div class="rule-group" data-id="<br />
-<b>Warning</b>:  Undefined variable $group_id in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-group.php</b> on line <b>1</b><br />
-">
+<div class="rule-group" data-id="<?php echo $group_id; ?>">
 
-	<h4>
-<br>
-<b>Warning</b>:  Undefined variable $group_id in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-group.php</b> on line <b>3</b><br>
-<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function __() in C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-group.php:3
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-group.php</b> on line <b>3</b><br>
-</h4>
+	<h4><?php echo ( $group_id == 'group_0' ) ? __( 'Show this field group if', 'acf' ) : __( 'or', 'acf' ); ?></h4>
+	
+	<table class="acf-table -clear">
+		<tbody>
+			<?php
+			foreach ( $group as $i => $rule ) :
+
+				// validate rule
+				$rule = acf_validate_location_rule( $rule );
+
+				// append id and group
+				$rule['id']    = "rule_{$i}";
+				$rule['group'] = $group_id;
+
+				// view
+				acf_get_view(
+					'html-location-rule',
+					array(
+						'rule' => $rule,
+					)
+				);
+
+			 endforeach;
+			?>
+		</tbody>
+	</table>
+	
 </div>

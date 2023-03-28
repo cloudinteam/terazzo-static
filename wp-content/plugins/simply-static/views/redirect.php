@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function _e() in C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\views\redirect.php:4
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\views\redirect.php</b> on line <b>4</b><br>
-</title>
-</head>
+		<title><?php _e( 'Redirecting...', 'simply-static' ); ?></title>
+		<meta http-equiv="refresh" content="0;url=<?php echo $this->redirect_url; ?>">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "<?php echo $this->redirect_url; ?>";
+		</script>
+
+		<p><?php echo sprintf( __( "You are being redirected to %s", 'simply-static' ), '<a href="' . $this->redirect_url . '">' . $this->redirect_url . '</a>' ); ?></p>
+	</body>
 </html>

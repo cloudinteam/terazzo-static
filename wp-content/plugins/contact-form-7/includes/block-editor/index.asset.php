@@ -1,5 +1,14 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Undefined constant &quot;WPCF7_VERSION&quot; in C:\xampp\htdocs\terazzo\wp-content\plugins\contact-form-7\includes\block-editor\index.asset.php:13
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\contact-form-7\includes\block-editor\index.asset.php</b> on line <b>13</b><br>
+<?php
+
+return array(
+	'dependencies' => array(
+		'wp-api-fetch',
+		'wp-block-editor',
+		'wp-blocks',
+		'wp-components',
+		'wp-element',
+		'wp-i18n',
+		'wp-url',
+	),
+	'version' => WPCF7_VERSION,
+);

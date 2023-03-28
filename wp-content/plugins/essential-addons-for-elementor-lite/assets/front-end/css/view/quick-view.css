@@ -290,7 +290,7 @@
 }
 .eael-product-popup .eael-product-image-wrap {
   width: 40%;
-  background-image: url("https://cloudinteam.github.io/terazzo-static/wp-content/plugins/essential-addons-for-elementor-lite/assets/wp-admin/images/spinner.gif");
+  background-image: url("../../../wp-admin/images/spinner.gif");
   background-repeat: no-repeat;
   background-position: center center;
 }

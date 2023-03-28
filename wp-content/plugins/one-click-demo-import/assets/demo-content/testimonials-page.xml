@@ -10,13 +10,13 @@
 
 	<channel>
 		<title>ocdi</title>
-		<link>https://ocdi.com/</link>
+		<link>https://ocdi.com</link>
 		<description>Just another WordPress site</description>
 		<pubDate>Thu, 25 Mar 2021 06:41:21 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
-		<wp:base_site_url>https://ocdi.com/</wp:base_site_url>
-		<wp:base_blog_url>https://ocdi.com/</wp:base_blog_url>
+		<wp:base_site_url>https://ocdi.com</wp:base_site_url>
+		<wp:base_blog_url>https://ocdi.com</wp:base_blog_url>
 
 		<generator>https://wordpress.org/?v=5.7</generator>
 

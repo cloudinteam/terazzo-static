@@ -1,5 +1,6 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\views\_activity_log.php:4
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\views\_activity_log.php</b> on line <b>4</b><br>
+<?php
+namespace Simply_Static;
+
+foreach ( $this->status_messages as $state_name => $status ) : ?>
+	<div class='activity <?php echo $state_name . '-state'; ?>'>[<?php echo $status['datetime']; ?>] <?php echo $status['message']; ?></div>
+<?php endforeach; ?>

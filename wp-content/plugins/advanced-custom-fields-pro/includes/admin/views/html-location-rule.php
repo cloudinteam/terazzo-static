@@ -1,21 +1,97 @@
-<br>
-<b>Warning</b>:  Undefined variable $rule in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>4</b><br>
-<br>
-<b>Warning</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>4</b><br>
-<br>
-<b>Warning</b>:  Undefined variable $rule in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>4</b><br>
-<br>
-<b>Warning</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>4</b><br>
-<tr data-id="<br />
-<b>Warning</b>:  Undefined variable $rule in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>7</b><br />
-<br />
-<b>Warning</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>7</b><br />
-">
+<?php
+
+// vars
+$prefix = 'acf_field_group[location][' . $rule['group'] . '][' . $rule['id'] . ']';
+
+?>
+<tr data-id="<?php echo $rule['id']; ?>">
 	<td class="param">
-		<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function acf_get_location_rule_types() in C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php:12
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-location-rule.php</b> on line <b>12</b><br>
-</td>
+		<?php
+
+		// vars
+		$choices = acf_get_location_rule_types();
+
+
+		// array
+		if ( is_array( $choices ) ) {
+
+			acf_render_field(
+				array(
+					'type'    => 'select',
+					'name'    => 'param',
+					'prefix'  => $prefix,
+					'value'   => $rule['param'],
+					'choices' => $choices,
+					'class'   => 'refresh-location-rule',
+				)
+			);
+
+		}
+
+		?>
+	</td>
+	<td class="operator">
+		<?php
+
+		// vars
+		$choices = acf_get_location_rule_operators( $rule );
+
+
+		// array
+		if ( is_array( $choices ) ) {
+
+			acf_render_field(
+				array(
+					'type'    => 'select',
+					'name'    => 'operator',
+					'prefix'  => $prefix,
+					'value'   => $rule['operator'],
+					'choices' => $choices,
+				)
+			);
+
+			// custom
+		} else {
+
+			echo $choices;
+
+		}
+
+		?>
+	</td>
+	<td class="value">
+		<?php
+
+		// vars
+		$choices = acf_get_location_rule_values( $rule );
+
+
+		// array
+		if ( is_array( $choices ) ) {
+
+			acf_render_field(
+				array(
+					'type'    => 'select',
+					'name'    => 'value',
+					'prefix'  => $prefix,
+					'value'   => $rule['value'],
+					'choices' => $choices,
+				)
+			);
+
+			// custom
+		} else {
+
+			echo $choices;
+
+		}
+
+		?>
+	</td>
+	<td class="add">
+		<a href="#" class="button add-location-rule"><?php _e( 'and', 'acf' ); ?></a>
+	</td>
+	<td class="remove">
+		<a href="#" class="acf-icon -minus remove-location-rule"></a>
+	</td>
 </tr>

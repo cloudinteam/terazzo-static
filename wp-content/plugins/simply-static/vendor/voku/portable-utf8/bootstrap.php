@@ -1,5 +1,7 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Class &quot;voku\helper\Bootup&quot; not found in C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\vendor\voku\portable-utf8\bootstrap.php:6
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\simply-static\vendor\voku\portable-utf8\bootstrap.php</b> on line <b>6</b><br>
+<?php
+
+use voku\helper\Bootup;
+use voku\helper\UTF8;
+
+Bootup::initAll(); // Enables UTF-8 for PHP
+UTF8::checkForSupport(); // Check UTF-8 support for PHP

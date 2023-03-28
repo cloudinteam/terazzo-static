@@ -179,11 +179,11 @@ a.helping-field {
 
 li#MailChimp-Extension-tab {
   border-top: 1px solid #01b7ff;
-  background: rgba(255, 255, 255, 0.5) url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/postal-marks.png') center top no-repeat;
+  background: rgba(255, 255, 255, 0.5) url('../images/postal-marks.png') center top no-repeat;
 }
 
 div#MailChimp-Extension {
-  /* background: url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/postal-stamp.png') right top no-repeat; */
+  /* background: url('../images/postal-stamp.png') right top no-repeat; */
 }
 
 .mail-field input {
@@ -294,7 +294,7 @@ span.invalid {
     position: absolute;
     right: 0;
     left: 0;
-    background: #fff url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/newsletter-stripe.svg') repeat-x;
+    background: #fff url('../images/newsletter-stripe.svg') repeat-x;
     background-size: 70px 9px;
     width: 100%;
     height: 9px;

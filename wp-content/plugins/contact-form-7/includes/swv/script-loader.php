@@ -1,5 +1,26 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function add_action() in C:\xampp\htdocs\terazzo\wp-content\plugins\contact-form-7\includes\swv\script-loader.php:3
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\contact-form-7\includes\swv\script-loader.php</b> on line <b>3</b><br>
+<?php
+
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		$assets = array();
+		$asset_file = wpcf7_plugin_path( 'includes/swv/js/index.asset.php' );
+
+		if ( file_exists( $asset_file ) ) {
+			$assets = include( $asset_file );
+		}
+
+		$assets = wp_parse_args( $assets, array(
+			'dependencies' => array(),
+			'version' => WPCF7_VERSION,
+		) );
+
+		wp_register_script( 'swv',
+			wpcf7_plugin_url( 'includes/swv/js/index.js' ),
+			$assets['dependencies'],
+			$assets['version'],
+			true
+		);
+	},
+	10, 0
+);

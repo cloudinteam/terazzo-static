@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'bslthemes';
-  src:  url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/mireya-plugin/admin/assets/fonts/icomoon.eot?z6qyg');
-  src:  url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/mireya-plugin/admin/assets/fonts/icomoon.eot?z6qyg#iefix') format('embedded-opentype'),
-    url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/mireya-plugin/admin/assets/fonts/icomoon.ttf?z6qyg') format('truetype'),
-    url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/mireya-plugin/admin/assets/fonts/icomoon.woff?z6qyg') format('woff'),
-    url('https://cloudinteam.github.io/terazzo-static/wp-content/plugins/mireya-plugin/admin/assets/fonts/icomoon.svg?z6qyg#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?z6qyg');
+  src:  url('../fonts/icomoon.eot?z6qyg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?z6qyg') format('truetype'),
+    url('../fonts/icomoon.woff?z6qyg') format('woff'),
+    url('../fonts/icomoon.svg?z6qyg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

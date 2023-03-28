@@ -1,10 +1,30 @@
-<br>
-<b>Warning</b>:  Undefined variable $active in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-admin-tools.php</b> on line <b>16</b><br>
-<br>
-<b>Warning</b>:  Undefined variable $active in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-admin-tools.php</b> on line <b>17</b><br>
-<div id="acf-admin-tools" class="wrap<br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function esc_attr() in C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-admin-tools.php:19
-Stack trace:
-#0 {main}
-  thrown in <b>C:\xampp\htdocs\terazzo\wp-content\plugins\advanced-custom-fields-pro\includes\admin\views\html-admin-tools.php</b> on line <b>19</b><br />
-"></div>
+<?php
+
+/**
+ *  html-admin-tools
+ *
+ *  View to output admin tools for both archive and single
+ *
+ *  @date    20/10/17
+ *  @since   5.6.3
+ *
+ *  @param   string $screen_id The screen ID used to display metaboxes
+ *  @param   string $active The active Tool
+ *  @return  n/a
+ */
+
+$class = $active ? 'single' : 'grid';
+$tool  = $active ? ' tool-' . $active : '';
+?>
+<div id="acf-admin-tools" class="wrap<?php echo esc_attr( $tool ); ?>">
+
+	<h1><?php _e( 'Tools', 'acf' ); ?> <?php
+	if ( $active ) :
+		?>
+		<a class="page-title-action" href="<?php echo acf_get_admin_tools_url(); ?>"><?php _e( 'Back to all tools', 'acf' ); ?></a><?php endif; ?></h1>
+
+	<div class="acf-meta-box-wrap -<?php echo $class; ?>">
+		<?php do_meta_boxes( $screen_id, 'normal', '' ); ?>
+	</div>
+
+</div>
