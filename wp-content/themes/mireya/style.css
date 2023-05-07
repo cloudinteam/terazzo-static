@@ -517,7 +517,8 @@ a, a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100px;
+	/* height: 100px; */
+	height: 75px;
 	width: 100%;
 }
 .admin-bar .mry-app .mry-top-panel {
@@ -548,7 +549,8 @@ a, a:hover {
 	width: 160px; */
 	padding: 0 10px 0 25px;
 	width: 190px;
-	height: 100px;
+	/* height: 100px; */
+	height: 75px;
 }
 
 .mry-app .mry-top-panel .mry-logo-frame .mry-logo {
