@@ -517,6 +517,7 @@ a, a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background: rgba(247,248, 250, 0.2);
 	/* height: 100px; */
 	height: 75px;
 	width: 100%;
@@ -540,7 +541,8 @@ a, a:hover {
 }
 
 .mry-app .mry-top-panel .mry-logo-frame {
-	background-color: #f7f8fa;
+	/* background-color: #f7f8fa; */
+	background-color: rgba(247,248, 250, 0);
 	display: block;
 	display: flex;
 	justify-content: flex-start;
@@ -565,7 +567,8 @@ a, a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #f7f8fa;
+	/* background-color: #f7f8fa; */
+	background-color: rgba(247,248, 250, 0);
 }
 
 .mry-menu-button-frame .mry-label {
@@ -1220,7 +1223,8 @@ html.is-animating .transition-fade .mry-loading-curtain {
 	right: 0;
 	display: flex;
 	align-items: center;
-	background-color: #f7f8fa;
+	/* background-color: #f7f8fa; */
+	background-color: rgba(247,248, 250, 0);
 }
 .admin-bar .mry-slider-pagination-frame {
 	height: calc(100vh - 32px);
@@ -1320,10 +1324,12 @@ html.is-animating .transition-fade .mry-loading-curtain {
 	top: 0;
 	padding: 0 20px 0 40px;
 	right: 0;
-	background-color: #f7f8fa;
+	/* background-color: #f7f8fa; */
+	background-color: rgba(247,248,250, 0.2);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	visibility: hidden;
 }
 
 .mry-slider-arrows .mry-label {
