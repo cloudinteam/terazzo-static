@@ -517,7 +517,7 @@ a, a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: rgba(247,248, 250, 0.2);
+	/* background: rgba(247,248, 250, 0.2); */
 	/* height: 100px; */
 	height: 75px;
 	width: 100%;
@@ -542,7 +542,7 @@ a, a:hover {
 
 .mry-app .mry-top-panel .mry-logo-frame {
 	/* background-color: #f7f8fa; */
-	background-color: rgba(247,248, 250, 0);
+	background-color: rgba(247,248, 250, 0.75);
 	display: block;
 	display: flex;
 	justify-content: flex-start;
@@ -568,7 +568,7 @@ a, a:hover {
 	align-items: center;
 	justify-content: space-between;
 	/* background-color: #f7f8fa; */
-	background-color: rgba(247,248, 250, 0);
+	background-color: rgba(247,248, 250, 0.75);
 }
 
 .mry-menu-button-frame .mry-label {
